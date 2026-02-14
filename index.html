@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purrfect Zine</title>
+  <link rel="stylesheet" href="styles/global.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <span class="deco-cat" aria-hidden="true">🐱</span>
+    <span class="deco-cat" aria-hidden="true">🌸</span>
+    <span class="deco-cat" aria-hidden="true">🐾</span>
+    <span class="deco-cat" aria-hidden="true">✨</span>
+    <div class="header-inner">
+      <div>
+        <div class="issue-label">Vol. I &nbsp;·&nbsp; Issue No. 3</div>
+        <div class="issue-label" style="margin-top:0.2rem">February 2026</div>
+      </div>
+      <div class="masthead">
+        <a href="index.html" class="zine-title">Sera's <span class="accent">Corner</span></a>
+        <div class="tagline">a little magazine about my life, the world &amp; very good code</div>
+      </div>
+      <nav>
+        <a href="#">Issues</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="hero-strip" aria-hidden="true">
+    <span class="ticker-text">
+      🐾 &nbsp; Issue 3 is here &nbsp;·&nbsp;
+      🌸 Personal: on trying to create more and consume less &nbsp;·&nbsp;
+      🗳️ Politics: the algorithm &amp; democracy &nbsp;·&nbsp;
+      💻 Code: building websites to display my affection &nbsp;·&nbsp;
+      🐈 Cat of the month: Professor Biscuit &nbsp;·&nbsp;
+      🌸 Personal: on reflections of the past years &nbsp;·&nbsp;
+      🗳️ Politics: the algorithm &amp; democracy &nbsp;·&nbsp;
+      💻 Code: improving classification models &nbsp;·&nbsp;
+      🐈 Cat of the month: Professor Biscuit &nbsp;·&nbsp;
+    </span>
+  </div>
+
+  <!-- CATEGORY NAV -->
+  <div class="cat-nav">
+    <div class="cat-nav-inner">
+      <a href="#personal" class="cat-nav-tab personal">🌸 <span class="tab-label">Personal</span></a>
+      <a href="#politics" class="cat-nav-tab politics">🗳️ <span class="tab-label">Politics</span></a>
+      <a href="#code"     class="cat-nav-tab code">💻 <span class="tab-label">Coding</span></a>
+    </div>
+  </div>
+
+  <main style="padding: 3rem 0 4rem; animation: fadeUp 0.55s 0.15s ease both;">
+    <div class="container">
+
+      <!-- ══════════ PERSONAL ══════════ -->
+      <section class="zine-section" id="personal">
+        <div class="section-header">
+          <div class="section-color-bar" style="background: var(--personal-acc)"></div>
+          <div class="section-header-text">
+            <div class="section-category-label" style="color: var(--personal-acc)">🌸 Personal Interests</div>
+            <div class="section-title">Life as it <em>actually</em> happens</div>
+            <div class="section-desc">Essays, obsessions, rituals, and things that make ordinary days feel meaningful.</div>
+          </div>
+          <div class="section-cat-icon" style="background: var(--personal-bg)">🐈</div>
+        </div>
+
+        <div class="articles-layout layout-personal">
+
+          <!-- FEATURED card — links to article -->
+          <a href="articles/on-afternoon-naps.html" class="article-card personal-card featured" style="background: var(--personal-bg)">
+            <div class="card-sticker">✦ Featured</div>
+            <div class="card-thumb" style="background: var(--personal-mid)">🌷</div>
+            <div class="card-body">
+              <div class="card-tag">Essay</div>
+              <div class="card-title">On the Philosophy of the Afternoon Nap (as taught by cats)</div>
+              <div class="card-excerpt">What cats understand about rest that we've spent centuries ignoring — a meditation on slowness, sunbeams, and the radical act of doing absolutely nothing.</div>
+              <div class="card-byline">by Nora Feldmann &nbsp;·&nbsp; 8 min read</div>
+            </div>
+          </a>
+
+          <a href="articles/sunday-reading-list.html" class="article-card personal-card">
+            <div class="card-thumb" style="background: var(--personal-bg)">📚</div>
+            <div class="card-body">
+              <div class="card-tag">Reading</div>
+              <div class="card-title">Seven Books for Long, Quiet Sundays</div>
+              <div class="card-byline">by the editors &nbsp;·&nbsp; 4 min</div>
+            </div>
+          </a>
+
+          <a href="articles/tea-and-cats.html" class="article-card personal-card">
+            <div class="card-thumb" style="background: var(--personal-bg)">🍵</div>
+            <div class="card-body">
+              <div class="card-tag">Column</div>
+              <div class="card-title">Tea, Toast &amp; a Cat on the Windowsill</div>
+              <div class="card-byline">by Hana Mori &nbsp;·&nbsp; 3 min</div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="cat-fact-strip">
+          <div class="cat-fact-emoji">🐾</div>
+          <div>
+            <div class="cat-fact-label">Cat Fact No. 3</div>
+            <div class="cat-fact-text">Cats can make over 100 distinct vocal sounds — most of them reserved exclusively for communicating with humans, not other cats.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════ POLITICS ══════════ -->
+      <section class="zine-section" id="politics">
+        <div class="section-header">
+          <div class="section-color-bar" style="background: var(--politics-acc)"></div>
+          <div class="section-header-text">
+            <div class="section-category-label" style="color: var(--politics-acc)">🗳️ Politics</div>
+            <div class="section-title">The world, <em>examined</em></div>
+            <div class="section-desc">Analysis, opinion, and uncomfortable questions about power, technology, and participation.</div>
+          </div>
+          <div class="section-cat-icon" style="background: var(--politics-bg)">🐱</div>
+        </div>
+
+        <div class="articles-layout layout-politics">
+
+          <a href="articles/algorithm-and-democracy.html" class="article-card politics-card">
+            <div class="card-thumb" style="background: var(--politics-bg); font-size: 2.8rem">🌐</div>
+            <div class="card-body">
+              <div class="card-tag">Analysis</div>
+              <div class="card-title">The Algorithm Doesn't Vote — But It Decides Who Does</div>
+              <div class="card-excerpt">How recommendation systems quietly reshape political participation, from local councils to national elections.</div>
+              <div class="card-byline">by Elif Karadağ &nbsp;·&nbsp; 10 min</div>
+            </div>
+          </a>
+
+          <a href="articles/parliamentary-language.html" class="article-card politics-card">
+            <div class="card-thumb" style="background: var(--politics-bg); font-size: 2.8rem">🏛️</div>
+            <div class="card-body">
+              <div class="card-tag">Opinion</div>
+              <div class="card-title">What Parliamentary Protocols Reveal About Who Gets to Speak</div>
+              <div class="card-excerpt">Language is political infrastructure. A close reading of how institutional speech patterns exclude and include.</div>
+              <div class="card-byline">by Sera &nbsp;·&nbsp; 7 min</div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="debate-box">
+          <div class="debate-header">
+            🐾 &nbsp; Cat Debate Corner — this issue: <strong>"Should AI be used to detect hate speech in public discourse?"</strong>
+          </div>
+          <div class="debate-cols">
+            <div class="debate-side">
+              <div class="debate-position">For</div>
+              <div class="debate-stance">"At scale, humans simply cannot read everything. Automated detection is a necessary first pass."</div>
+              <div class="debate-body">Pattern recognition across millions of documents reveals systemic trends invisible to individual reviewers — the question is accountability, not capability.</div>
+            </div>
+            <div class="debate-side">
+              <div class="debate-position">Against</div>
+              <div class="debate-stance">"Context collapses in automated systems. Irony, reclamation, and dialect are all casualties."</div>
+              <div class="debate-body">Classification models trained on majority-group data reproduce the same power structures they claim to dismantle. Precision matters more than speed.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════ CODING ══════════ -->
+      <section class="zine-section" id="code">
+        <div class="section-header">
+          <div class="section-color-bar" style="background: var(--code-acc)"></div>
+          <div class="section-header-text">
+            <div class="section-category-label" style="color: var(--code-acc)">💻 Coding</div>
+            <div class="section-title">Building things that <em>think</em></div>
+            <div class="section-desc">Tutorials, projects, and honest reflections on the craft of writing code.</div>
+          </div>
+          <div class="section-cat-icon" style="background: var(--code-bg)">😸</div>
+        </div>
+
+        <div class="articles-layout layout-code">
+
+          <a href="articles/building-in-astro.html" class="terminal-card">
+            <div class="terminal-bar">
+              <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+              <span class="terminal-filename">astro-zine.ts</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-tag">Tutorial</div>
+              <div class="terminal-prompt">npm create astro@latest my-zine</div>
+              <div class="terminal-output">✓ Template cloned<br>✓ Dependencies installed<br>✓ Ready to publish<span class="cursor"></span></div>
+              <div class="terminal-title">Building This Zine in Astro: A Complete Walkthrough</div>
+              <div class="terminal-byline">by the editors &nbsp;·&nbsp; 12 min</div>
+            </div>
+          </a>
+
+          <a href="articles/bert-hate-speech.html" class="terminal-card">
+            <div class="terminal-bar">
+              <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+              <span class="terminal-filename">hate-speech-detector.py</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-tag">NLP / Research</div>
+              <div class="terminal-prompt">python train.py --model bert-base-german</div>
+              <div class="terminal-output">Epoch 3/5 &nbsp; loss: 0.142<br>F1: 0.87 &nbsp; ✓ checkpoint saved<span class="cursor"></span></div>
+              <div class="terminal-title">Fine-Tuning BERT on Parliamentary Hate Speech Data</div>
+              <div class="terminal-byline">by Sera &nbsp;·&nbsp; 15 min</div>
+            </div>
+          </a>
+
+          <a href="articles/content-collections.html" class="terminal-card">
+            <div class="terminal-bar">
+              <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+              <span class="terminal-filename">content-collections.ts</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-tag">Astro</div>
+              <div class="terminal-prompt">astro build &amp;&amp; netlify deploy</div>
+              <div class="terminal-output">✓ 12 pages built in 1.4s<br>✓ Deployed to production<span class="cursor"></span></div>
+              <div class="terminal-title">Content Collections: The Right Way to Structure a Zine</div>
+              <div class="terminal-byline">by the editors &nbsp;·&nbsp; 8 min</div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-blurb">Sera's Corner is an independent publication about personal life, politics, and code — held together by cats, curiosity, and strong tea.</div>
+      <div class="footer-center">
+        <div class="footer-title">Sera's Corner</div>
+        <div class="footer-cats" aria-hidden="true">🐈 🐾 🌸</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Archive</a>
+        <a href="#">Subscribe</a>
+        <a href="#">Contribute</a>
+        <a href="#">RSS</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
